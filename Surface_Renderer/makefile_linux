@@ -1,0 +1,4 @@
+bezsurface:  bezsurface.cpp
+	g++ -DGL_GLEXT_PROTOTYPES -o bezsurface bezsurface.cpp -lglut -lGL -lGLU -lXmu -lX11 -lm
+
+

@@ -1,0 +1,5 @@
+import:  import.cpp v_import.glsl f_import.glsl
+	g++ -framework GLUT -framework OpenGL import.cpp -o import
+
+
+

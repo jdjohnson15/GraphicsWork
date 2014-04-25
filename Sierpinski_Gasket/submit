@@ -1,0 +1,19 @@
+  whoami>id
+  read uid < id 
+  rm id
+  dirname=$1
+  dirname=${dirname:?"missing directory name."}
+  if [ ! -e "/classes/cs3014/hw/$uid/$1" ]; then
+    mkdir /classes/cs3014/hw/$uid/$1
+  fi 
+  cp *.cpp /classes/cs3014/hw/$uid/$1
+  cp *.h /classes/cs3014/hw/$uid/$1
+  cp makefile /classes/cs3014/hw/$uid/$1
+  cd /classes/cs3014/hw/$uid/$1
+    chmod 740 *.*
+    chmod 740 makefile 
+  echo -n 'Listing of:   '     
+  pwd
+  ls -l
+  echo  $1 has been submitted by $uid on ' '
+  date

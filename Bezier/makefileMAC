@@ -1,0 +1,3 @@
+bezier:  bezier.cpp f_bezier.glsl v_bezier.glsl
+	g++ -framework GLUT -framework OpenGL -o bezier bezier.cpp 
+

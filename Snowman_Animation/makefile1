@@ -1,0 +1,3 @@
+rv:  quadric.cpp vquadrics.glsl fquadrics.glsl
+	g++ -framework GLUT -framework OpenGL quadric.cpp -o rv
+

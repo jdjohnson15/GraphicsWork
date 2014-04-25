@@ -1,0 +1,4 @@
+raytracer:  raytracer.cpp
+	g++ -DGL_GLEXT_PROTOTYPES -o raytracer raytracer.cpp -lglut -lGL -lGLU -lXmu -lX11 -lm
+
+
